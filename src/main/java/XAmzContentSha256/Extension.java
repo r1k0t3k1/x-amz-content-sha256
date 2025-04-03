@@ -18,6 +18,7 @@ public class Extension implements BurpExtension {
     public void initialize(MontoyaApi api) {
         api.extension().setName("X-Amz-Content-Sha256");
 
-        api.http().registerHttpHandler(new CustomHandler());
+        api.http().registerHttpHandler(new CustomHttpHandler());
+        api.proxy().registerRequestHandler(new CustomProxyHandler());
     }
 }

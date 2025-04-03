@@ -17,7 +17,7 @@ import burp.api.montoya.http.handler.ResponseReceivedAction;
 import burp.api.montoya.http.message.requests.HttpRequest;
 
 
-class CustomHandler implements HttpHandler {
+class CustomHttpHandler implements HttpHandler {
     private final String SIGN_HEADER = "x-amz-content-sha256";
 
     @Override
